@@ -10,10 +10,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string UserV;
-            for (int i = 0; i < 100; i++)
-            {
-                Console.WriteLine(" ");
-            }
+            Console.Clear();
             Console.WriteLine("Битва Ахламонов");
             Console.Write("Хотите сыграть? ");
             UserV = Console.ReadLine();
@@ -23,10 +20,7 @@ namespace ConsoleApp1
                     {
                         while (UserV == "да")
                         {
-                            for (int i = 0; i < 100; i++)
-                            {
-                                Console.WriteLine(" ");
-                            }
+                            Console.Clear();
                             Random rand = new Random();
                             float health1 = rand.Next(90, 100);
                             int damage1 = rand.Next(5, 20);
@@ -60,10 +54,7 @@ namespace ConsoleApp1
                                 }
                                 if (health1 <= 0 && health2 <= 0)
                                 {
-                                    for (int i = 0; i < 100; i++)
-                                    {
-                                        Console.WriteLine(" ");
-                                    }
+                                    Console.Clear();
                                     Console.WriteLine("Ничья!");
                                     Console.WriteLine($"У них по ровну здоровья, они оба погибли.");
                                     Console.Write("Хотите ли вы сыграть еще раз? ");
@@ -71,10 +62,7 @@ namespace ConsoleApp1
                                 }
                                 else if (health1 > health2)
                                 {
-                                    for (int i = 0; i < 100; i++)
-                                    {
-                                        Console.WriteLine(" ");
-                                    }
+                                    Console.Clear();
                                     Console.WriteLine("Победил первый Ахламон!");
                                     Console.WriteLine($"У первого Ахламона осталось {health1} здоровья.");
                                     Console.Write("Хотите ли вы сыграть еще раз? ");
@@ -82,51 +70,36 @@ namespace ConsoleApp1
                                 }
                                 else if (health2 > health1)
                                 {
-                                    for (int i = 0; i < 100; i++)
-                                    {
-                                        Console.WriteLine(" ");
-                                    }
+                                    Console.Clear();
                                     Console.WriteLine("Победил второй Ахламон!");
                                     Console.WriteLine($"У второго Ахламона осталось {health2} здоровья.");
                                     Console.Write("Хотите ли вы сыграть еще раз? ");
                                     UserV = Console.ReadLine();
                                 }
-                                for (int i = 0; i < 100; i++)
-                                {
-                                    Console.WriteLine(" ");
-                                }
+                                Console.Clear();
                                 Console.WriteLine("Рад был тебя видеть!");
                                 Console.WriteLine("Надеюсь вы к нам когда-то вернетесь :)");
                             }
                             else if (UserV == "нет")
                             {
-                                for (int i = 0; i < 100; i++)
-                                {
-                                    Console.WriteLine(" ");
-                                }
+                                Console.Clear();
                                 Console.WriteLine("Рад был тебя видеть!");
                                 Console.WriteLine("Надеюсь вы к нам когда-то вернетесь :)");
-                            }    
-                        }    
+                            }
+                        }
                     }
-                break;
+                    break;
 
                 case ("нет"):
                     {
-                        for (int i = 0; i < 100; i++)
-                        {
-                            Console.WriteLine(" ");
-                        }
+                        Console.Clear();
                         Console.WriteLine("Рад был тебя видеть!");
                         Console.WriteLine("Надеюсь вы к нам когда-то вернетесь :)");
                     }
-                break;
+                    break;
                 default:
                     {
-                        for (int i = 0; i < 100; i++)
-                        {
-                            Console.WriteLine(" ");
-                        }
+                        Console.Clear();
                         Console.WriteLine("Я не понял что вы написали!");
                         Console.WriteLine("Попробуйте написать с маленькой буквы");
                         Console.WriteLine("Перезапустите программу и напишите: да или нет");
